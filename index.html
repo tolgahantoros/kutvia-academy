@@ -6,71 +6,264 @@
   <title>Kutvia Academy | Uygulamalı Teknoloji Eğitimi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="logo" href="index.html">Kutvia Academy</a>
-      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Menü">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="menu" id="navMenu">
-        <li><a href="#programlar">Programlar</a></li>
-        <li><a href="#metot">Eğitim Metodu</a></li>
-        <li><a href="contact.html">İletişim</a></li>
-      </ul>
+  <header class="header">
+    <nav class="navbar container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo">Kutvia Academy</a>
+        <button class="hamburger" id="hamburger" aria-label="Menü aç/kapat" aria-expanded="false" aria-controls="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#ana">Ana Sayfa</a></li>
+          <li><a href="#neden">Neden Biz</a></li>
+          <li><a href="#programlar">Programlar</a></li>
+          <li><a href="#surec">Süreç</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <main id="ana">
-    <section class="hero container">
-      <p class="eyebrow">Üreterek Öğren</p>
-      <h1>Sıfırdan ileri seviyeye, proje odaklı teknoloji eğitimi.</h1>
-      <p class="lead">Kutvia Academy, yazılımdan siber güvenliğe kadar tüm programlarda teoriyi doğrudan uygulama ile birleştirir.</p>
-      <a class="btn" href="#programlar">Programları İncele</a>
-    </section>
-
-    <section class="tracks container" id="programlar">
-      <article class="track">
-        <h2>Yazılım Geliştirme</h2>
-        <p>Frontend, backend ve deploy süreçlerini gerçek ürün senaryolarıyla öğretir.</p>
-      </article>
-      <article class="track">
-        <h2>Siber Güvenlik</h2>
-        <p>Temelden ileriye mavi takım becerileri ve laboratuvar odaklı uygulamalar sunar.</p>
-      </article>
-      <article class="track">
-        <h2>Veri ve Yapay Zeka</h2>
-        <p>Veri analizi, modelleme temelleri ve sorumlu yapay zeka pratikleriyle kapsamlı yol haritası sağlar.</p>
-      </article>
-    </section>
-
-    <section class="method" id="metot">
-      <div class="container grid">
-        <div>
-          <h2>Eğitim Yaklaşımımız</h2>
-          <p>Her modül; konu anlatımı, atölyeler, mentor geri bildirimi ve demo günü adımlarıyla ilerler.</p>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">Kutvia Academy - Öğrenim ve Uygulama</span>
+          <h1>Teknoloji ekiplerini gerçek projelerle hızlandıran eğitim sistemi.</h1>
+          <p>Kutvia Academy; şirketlere özel eğitim içerikleri, mentorluk ve uygulamalı atölyelerle öğrenmeyi ölçülebilir performansa dönüştürür.</p>
+          <div class="hero-buttons">
+            <a href="#programlar" class="btn btn-primary">Programları İncele</a>
+            <a href="#iletisim" class="btn btn-secondary">İletişim Bölümü</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">12+</span>
+              <span class="stat-label">Eğitim Başlığı</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Uygulamalı İçerik</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">7/24</span>
+              <span class="stat-label">Öğrenme Desteği</span>
+            </div>
+          </div>
         </div>
-        <ul>
-          <li>Canlı haftalık workshop</li>
-          <li>Mentorlu kod inceleme</li>
-          <li>Kariyer odaklı proje sunumu</li>
-          <li>Sertifika ve portfolyo desteği</li>
-        </ul>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card visual-card-main">
+            <p>Eğitim Akışı</p>
+            <strong>Analiz → Atölye → Üretim</strong>
+          </div>
+          <div class="visual-card visual-card-accent">
+            <p>Canlı Takip</p>
+            <strong>Gelişim raporları ve mentorluk</strong>
+          </div>
+          <span class="shape shape-one"></span>
+          <span class="shape shape-two"></span>
+        </div>
       </div>
     </section>
 
-    <section class="contact container" id="iletisim">
-      <h2>Yeni dönem için kayıt ol</h2>
-      <p>İletişim: hello@kutvia-academy.com</p>
-      <a class="btn" href="contact.html">İletişim Sayfasına Git</a>
+    <section class="features" id="neden">
+      <div class="container">
+        <div class="section-header">
+          <h2>Neden Kutvia Academy?</h2>
+          <p>Kurumsal ekipler için tasarlanmış, sahaya inen eğitim yaklaşımı</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">01</div>
+            <h3>İhtiyaç Odaklı</h3>
+            <p>Her eğitim, kurumun mevcut yetkinlik seviyesine ve hedeflerine göre yapılandırılır.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">02</div>
+            <h3>Uygulama Merkezli</h3>
+            <p>Teori yalnızca temel oluşturur; asıl öğrenme gerçek senaryolar ve atölyelerle ilerler.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">03</div>
+            <h3>Ölçülebilir</h3>
+            <p>Yetkinlik haritaları, geri bildirimler ve gelişim raporlarıyla ilerleme görünür hale gelir.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">04</div>
+            <h3>Mentorlu</h3>
+            <p>Eğitim boyunca uzman eğitmenler ekiplerin yanında kalarak teknik yönlendirme sağlar.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">05</div>
+            <h3>Esnek Yapı</h3>
+            <p>Yüz yüze, çevrim içi veya hibrit formatlarda kurum içi işleyişe uyum sağlayan yapılar sunar.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">06</div>
+            <h3>Sürdürülebilir</h3>
+            <p>Tek seferlik eğitim yerine, kalıcı alışkanlık ve bilgi aktarımı hedeflenir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="programlar">
+      <div class="container">
+        <div class="section-header">
+          <h2>Eğitim Programları</h2>
+          <p>Teknik ekipler için modüler ve derinleştirilebilir programlar</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-item">
+            <h3>Yazılım Mühendisliği</h3>
+            <p>Modern web geliştirme, API tasarımı, test kültürü ve sürüm yönetimi etrafında yapılandırılmış tam kapsamlı akış.</p>
+            <ul class="tech-list">
+              <li>HTML, CSS ve JavaScript</li>
+              <li>React tabanlı arayüzler</li>
+              <li>API entegrasyonu</li>
+              <li>Test ve yayın süreçleri</li>
+            </ul>
+          </article>
+          <article class="service-item">
+            <h3>Siber Güvenlik</h3>
+            <p>Tehdit analizi, güvenli sistem tasarımı ve olay müdahale süreçlerine odaklanan pratik bir içerik seti.</p>
+            <ul class="tech-list">
+              <li>Temel güvenlik mimarisi</li>
+              <li>Laboratuvar senaryoları</li>
+              <li>Olay müdahale akışı</li>
+              <li>Risk farkındalığı</li>
+            </ul>
+          </article>
+          <article class="service-item">
+            <h3>Veri ve Yapay Zeka</h3>
+            <p>Veri okuryazarlığı, model değerlendirme ve sorumlu yapay zeka yaklaşımını birlikte ele alan eğitim hattı.</p>
+            <ul class="tech-list">
+              <li>Veri analizi temelleri</li>
+              <li>Model doğrulama</li>
+              <li>Karar destek sistemleri</li>
+              <li>Etik kullanım çerçevesi</li>
+            </ul>
+          </article>
+          <article class="service-item">
+            <h3>Takım İçi Mentorluk</h3>
+            <p>Teknik ekiplerin kendi ürünleri üzerinde ilerlemesini sağlayan, doğrudan çıktı odaklı mentor oturumları.</p>
+            <ul class="tech-list">
+              <li>Kod inceleme</li>
+              <li>Mimari değerlendirme</li>
+              <li>İş akışı iyileştirme</li>
+              <li>Teknik koçluk</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="surec">
+      <div class="container">
+        <div class="section-header">
+          <h2>Çalışma Sürecimiz</h2>
+          <p>Basit ama disiplinli bir yapı ile öğrenme çıktısını güvence altına alırız</p>
+        </div>
+        <div class="portfolio-grid">
+          <article class="portfolio-card">
+            <div class="portfolio-image">
+              <div class="image-placeholder">01</div>
+            </div>
+            <div class="portfolio-content">
+              <span class="portfolio-tag">Analiz</span>
+              <h3>İhtiyaç ve seviye tespiti</h3>
+              <p>Mevcut beceri düzeyini ve öğrenme hedeflerini netleştirir, eğitim planını buna göre şekillendiririz.</p>
+            </div>
+          </article>
+          <article class="portfolio-card">
+            <div class="portfolio-image">
+              <div class="image-placeholder">02</div>
+            </div>
+            <div class="portfolio-content">
+              <span class="portfolio-tag">Atölye</span>
+              <h3>Canlı uygulama oturumları</h3>
+              <p>Katılımcılar teorik anlatımı, eş zamanlı olarak ürün ve senaryo tabanlı çalışmalara dönüştürür.</p>
+            </div>
+          </article>
+          <article class="portfolio-card">
+            <div class="portfolio-image">
+              <div class="image-placeholder">03</div>
+            </div>
+            <div class="portfolio-content">
+              <span class="portfolio-tag">Sonuç</span>
+              <h3>Raporlama ve gelişim</h3>
+              <p>Her program sonunda ekip performansını, ilerleme noktalarını ve takip adımlarını netleştiririz.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="iletisim">
+      <div class="container">
+        <div class="section-header">
+          <h2>Kurumsal eğitim planınızı birlikte oluşturalım</h2>
+          <p>İhtiyacınızı paylaşın, size uygun program yapısını birlikte netleştirelim</p>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="info-item">
+              <h4>E-posta</h4>
+              <a href="mailto:hello@kutvia-academy.com">hello@kutvia-academy.com</a>
+            </div>
+            <div class="info-item">
+              <h4>Telefon</h4>
+              <a href="tel:+902120000002">+90 212 000 00 02</a>
+            </div>
+            <div class="info-item">
+              <h4>Çalışma Saatleri</h4>
+              <p>Hafta içi 09:00 - 18:00</p>
+            </div>
+            <div class="info-item">
+              <h4>Adres</h4>
+              <p>İstanbul, Türkiye</p>
+            </div>
+          </div>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+              <label for="adSoyad">Ad Soyad *</label>
+              <input id="adSoyad" name="adSoyad" type="text" placeholder="Adınızı ve soyadınızı yazın" required />
+            </div>
+            <div class="form-group">
+              <label for="eposta">E-posta *</label>
+              <input id="eposta" name="eposta" type="email" placeholder="ornek@mail.com" required />
+            </div>
+            <div class="form-group">
+              <label for="program">İlgilendiğiniz Program *</label>
+              <select id="program" name="program" required>
+                <option value="" selected disabled>Program seçin</option>
+                <option value="yazilim">Yazılım Mühendisliği</option>
+                <option value="siber">Siber Güvenlik</option>
+                <option value="veri-ai">Veri ve Yapay Zeka</option>
+                <option value="mentorluk">Takım İçi Mentorluk</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mesaj">Proje / Eğitim Açıklaması *</label>
+              <textarea id="mesaj" name="mesaj" rows="5" placeholder="Kısaca ihtiyaçlarınızı yazın" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Mesajı Gönder</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container"><p>2026 Kutvia Academy. Tüm hakları saklıdır.</p></div>
+    <div class="container footer-inner">
+      <p>Kutvia Academy, ekiplerin teknik gelişimini yapılandırılmış eğitim programlarına dönüştürür.</p>
+      <p>2026 Kutvia Academy. Tüm hakları saklıdır.</p>
+    </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
